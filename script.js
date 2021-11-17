@@ -109,9 +109,11 @@ mult.onclick = function(){
 }
 submitBoba.onclick = function(){
     console.log(slovoInInput.value);
-    multiDiDio.style.transform = "translateY(-100%)"
+    if (slovoInInput.value) {
+         multiDiDio.style.transform = "translateY(-100%)"
     secretWord = slovoInInput.value
     newGame()
+    }
 }
 
 
